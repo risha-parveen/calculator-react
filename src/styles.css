@@ -2,11 +2,18 @@
     box-sizing: border-box;
 }
 
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
 body{
     width:100vw;
     height:100vh;
     margin:0;
     background:linear-gradient(to right, rgb(131, 141, 128),rgb(187, 119, 156));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .calculator-grid{
@@ -16,8 +23,8 @@ body{
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(110px,auto) repeat(5,100px);
+    grid-template-columns: repeat(4,90px);
+    grid-template-rows: minmax(110px,auto) repeat(5,90px);
 }
 
 .calculator-grid > button{
@@ -38,7 +45,7 @@ body{
 
 .output{
     background-color: rgba(41, 41, 41, 0.801);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     grid-column: 1/-1;
     display:flex;
     flex-direction: column;
